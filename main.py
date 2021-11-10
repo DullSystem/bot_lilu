@@ -189,7 +189,7 @@ def full_date(message, date_number):
                 line_time2 = str(worksheet.cell(date, 4).value)  # Второе время на данную дату, добавляем в словарь
                 user_time2[chat_id] = [line_time2]
                 line_time3 = str(worksheet.cell(date, 5).value)  # Третье время на данную дату, добавляем в словарь
-                user_time3[chat_id] = [line_time1]
+                user_time3[chat_id] = [line_time3]
                 bot.send_message(message.chat.id, f'{worksheet_list} месяц')
                 bot.send_message(message.chat.id, f'{line_date} число')
                 bot.send_message(message.chat.id, day_of_week)
@@ -219,7 +219,7 @@ def full_date(message, date_number):
             line_time2 = str(worksheet2.cell(date, 4).value)  # Второе время на данную дату, добавляем в словарь
             user_time2[chat_id] = [line_time2]
             line_time3 = str(worksheet2.cell(date, 5).value)  # Третье время на данную дату, добавляем в словарь
-            user_time3[chat_id] = [line_time1]
+            user_time3[chat_id] = [line_time3]
             bot.send_message(message.chat.id, f'{worksheet_list2} месяц')
             bot.send_message(message.chat.id, f'{line_date} число')
             bot.send_message(message.chat.id, day_of_week)
